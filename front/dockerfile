@@ -1,0 +1,9 @@
+FROM node:20-slim
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+CMD [ "npm", "run", "start:all-npm" ]
+
+
+# docker stop nwsc ; docker rm nwsc ;docker build -t grs2080wdock/nwsc . ; docker run -p 3000:3000 --name nwsc grs2080wdock/nwsc

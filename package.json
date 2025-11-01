@@ -1,0 +1,22 @@
+{
+	"name": "nwsc",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": [
+		"back",
+		"front"
+	],
+	"type": "module",
+	"scripts": {
+		"build": "npm run build --workspace back && npm run build --workspace front",
+		"start": "npm run build --workspace front && npm run server --workspace front",
+		"start:server": "npm run server --workspace front",
+		"dev": "concurrently \"npm run dev --workspace back\" \"npm run dev --workspace front\"",
+		"clean:node_modules": "npx rimraf --glob node_modules back/node_modules front/node_modules",
+		"reinstall": "npm run clean:node_modules && npm install"
+	},
+	"dependencies": {
+		"biome": "^0.3.3",
+		"concurrently": "^9.2.1"
+	}
+}

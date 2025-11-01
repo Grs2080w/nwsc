@@ -1,0 +1,50 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"includes": [
+			"**",
+			"!**/globals.css",
+			"!tailwind.config.js",
+			"node_modules/**",
+			".next/**"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"noAutofocus": "off"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off"
+			},
+			"performance": {
+				"noImgElement": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	}
+}
