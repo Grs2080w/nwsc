@@ -1,5 +1,10 @@
 # Nwsc
 
+<div align="center">
+    <img width="60%" src="./example-homepage.png" />
+</div>
+<br>
+
 A free, fast messaging app. The focus is simple: create public or private rooms in seconds, exchange messages in real time, and share with whomever you want. All this powered by a backend that can handle the workload and a responsive frontend that can keep up.
 
 
